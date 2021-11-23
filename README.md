@@ -1,1 +1,1 @@
-# IoITeam-KOHackathon
+# IoITeam-KOHackthon
