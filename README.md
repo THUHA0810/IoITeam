@@ -1,8 +1,8 @@
 # USER MANUAL
 WEBSITE:
-•	Home page (Standalone): https://thuha0810.github.io/IoITeam/
-    -	The homepage of the website includes:
-        o	Information of team members.
+#•	Homepage (Standalone): https://thuha0810.github.io/IoITeam/
+    #-	The homepage of the website includes:
+        #o	Information of team members.
         o	Information about the project.
         o	Project goal, process, and implementation time.
 •	Control (Incall): https://thuha0810.github.io/IoITeam/incall.html
