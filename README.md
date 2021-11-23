@@ -1,11 +1,11 @@
 # USER MANUAL
 WEBSITE:
-   # Homepage (Standalone): https://thuha0810.github.io/IoITeam/
+   Homepage (Standalone): https://thuha0810.github.io/IoITeam/
     -	The homepage of the website includes:
         o	Information of team members.
         o	Information about the project.
         o	Project goal, process, and implementation time.
-   # Control (Incall): https://thuha0810.github.io/IoITeam/incall.html
+   Control (Incall): https://thuha0810.github.io/IoITeam/incall.html
     -	This is the website used to control the robot to move and start capture video.
 You can visit the link to see the interface, information and control the robot.
 
