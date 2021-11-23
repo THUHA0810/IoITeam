@@ -25,7 +25,7 @@ You can visit the link to see the interface, information and control the robot.
 
 
 
-# Resources
+# RESOURCES
     # web app: https://thuha0810.github.io/IoITeam/
     #incall: https://thuha0810.github.io/IoITeam/incall.html
     # QR code, Bar code: https://thuha0810.github.io/IoITeam/CodeFire.py     https://thuha0810.github.io/IoITeam/QRBarCodeProject.py
