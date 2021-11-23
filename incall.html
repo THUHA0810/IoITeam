@@ -1,0 +1,232 @@
+
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>IoI Team</title>
+         <link rel="icon" type="image/x-icon" href="/pic/favicon.ico">
+        <style>
+        .haa{color: darkslategray;
+            background-color:rgb(106, 125, 147);
+            font-family: Helvetica, Verdana, sans-serif;
+            font-size:200%;
+            text-shadow: 2px 2px 4px #000000;
+            padding: 30px;
+            margin-bottom:5px;
+        }
+        .haaa{color: gray;
+            font-family: Tahoma, Verdana, sans-serif;
+            font-size:150%;
+            text-shadow: 1px 1px 2px #000000;
+            text-align: right;
+            margin-right:100px;
+        }
+        .ha {color: dodgerblue; 
+            font-size: 200%;
+        }
+        
+        a:link {
+            color: lightblue;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:visited {
+            color: white;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:hover {
+            color: lightblue;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: none;
+            width: 100%;
+            position: fixed;
+
+        }
+
+        li a{
+            display: inline;
+            color: gray;
+            text-align: right bottom;
+            font-size: 100%;
+            padding: 10px 10px;
+            text-decoration: none;
+            float: right;
+        }
+        a:hover, .dropdown:hover .dropbtn {
+            background-color: gray;
+            border-radius: 4px;
+        }
+        a.active {
+            background-color: none;
+            color: gray;
+            }
+
+        li a:hover:not(.active) {
+            background-color: none;
+            color: none;
+        }
+
+        h1,h2,h3,h4,h5 {
+            font-family: Helvetica, Verdana, sans-serif;
+        }
+.pg{
+    text-align: right;
+    margin-right: 80px;
+    margin-top:-30px;
+    margin-bottom:-20px;
+    font-size:85%;
+}
+.pgb{
+    text-align: right;
+    margin-right: 80px;
+    font-family: Helvetica, Verdana, sans-serif;
+    font-size:120%;
+}
+div{
+    margin-left:600px;
+    margin-right:600px;
+}
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.box1{
+  background-color: none;
+  width: 400px;
+  height:300px;
+  border: 0px solid white;
+  padding: 10px;
+  margin-left: 20px;
+
+}
+.box2 {
+  background-color: none;
+  width: 500px;
+  height:200px;
+  border: 0px solid white;
+  padding: 10px;
+  margin: 0px;
+  margin-left:auto;
+  
+}
+.box4 {
+  background-color: none;
+  width: 600px;
+  height:200px;
+  border: 0px solid white;
+  padding: 10px;
+  margin-left: 200px;
+  margin-right: 300px;
+  margin-top:-30px;
+}
+
+.imgmb {
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px;
+}
+img{
+  border-radius: 2px;
+  padding: 5px;
+}
+p{font-family:Helvetica;}
+    body {
+    background-image: url("/pic/3bg.jpg");
+    background-repeat: repeat-y;
+    background-position: none;
+    background-size: 100%;
+    background-attachment: fixed;
+    margin-left: 0px;
+    }
+    
+    
+.button {
+  background-color: #58257b; /* màu của Quản trị mạng ^^ */
+  border: none;
+  color: white;
+  padding: 30px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+        </style>
+
+        <!-- Load external CSS styles -->
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://api.ohmnilabs.com/ohmni-api/Ohmni-standalone.js"></script>
+        <script src="https://api.ohmnilabs.com/ohmni-api/Ohmni-incall.js"></script>
+    </head>
+
+    <body style = "background-color:white;">
+        <a href="http://iuh.edu.vn/"><img src="/pic/Untitlediuh.png" alt="IUH"  title="Nhấn để đến trang chủ của IUH" width="130" height="70"></a>
+        <a href="https://ohmnilabs.com/"><img src="/pic/ohmni.jpeg" alt="ohmnilabs" title="Nhấn để đến trang chủ của Ohmnilabs" width="130" height="70"></a>
+        <a href="/pic/IOITEAM.jpg"><img src="/pic/IOITEAM.jpg" alt="ioiteam" title="Nhấn để đến xem logo của IoI Team" width="130" height="70"></a>
+        
+            <!-- Control incall -->
+        <h1>CONTROL INCALL<h1>    
+        <br>
+        <button type="button" data-external="true" class="button"  onclick="move2();">Tiến</button> 
+        <button type="button" data-external="true" class="button"  onclick="move();">Phải</button> 
+        <button type="button" data-external="true" class="button"  onclick="move4();">Trái</button>
+        <button type="button" data-external="true" class="button"  onclick="move3();">Lùi</button>
+      <button type="button" id="startCaptureVideo" data-external="true" class="button" style="padding:30px;margin:20px; margin-top: 60px" onclick="captureVideo();">startCaptureVideo</button><br>
+      <button type="button" id="stopCaptureVideo" data-external="true" class="button" style="padding:30px;margin:20px; margin-top: 60px; display: none;" onclick="stopCaptureVideo();">stopCaptureVideo</button><br>
+      <img style="float:right;" src="" width="600px" height="600px" id="videoCall" style="display: none;"> <br>        
+       
+       
+       
+        <script>
+            var intervalGetVideo;
+    function captureVideo() {
+      intervalGetVideo = setInterval(function() {
+        Ohmni.captureVideo();
+      }, 33);
+      document.getElementById('videoCall').style.display = "";
+      document.getElementById('stopCaptureVideo').style.display = "inline-block";
+      document.getElementById('startCaptureVideo').style.display = "none";
+    }
+
+    function stopCaptureVideo() {
+      clearInterval(intervalGetVideo);
+      document.getElementById('videoCall').style.display = "none";
+      document.getElementById('startCaptureVideo').style.display = "inline-block";
+      document.getElementById('stopCaptureVideo').style.display = "none";
+    }
+
+    function captureVideoCb(imageBase64) {
+      document.getElementById("videoCall").src = imageBase64;
+    }
+        function move() {
+            Ohmni.move(100, 100, 2000); } 
+        function move2() { 
+            Ohmni.move(100, -100, 2000); }
+        function move3() { 
+            Ohmni.move(-100, 100, 2000); }
+        function move4() { 
+            Ohmni.move(-100, -100, 2000); }
+        </script>
+
+    
+    
+   
+
+        <!-- Load external JavaScript -->
+        <script src="scripts.js"></script>
+        
+
+</html>
