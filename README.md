@@ -9,7 +9,7 @@ WEBSITE:
     -	This is the website used to control the robot to move and start capture video.
 You can visit the link to see the interface, information and control the robot.
 
-PROJECT GOAL:
+# PROJECT GOAL:
 •	Student attendance by barcode:
     -	Robots can help students take attendance for classes through barcodes on student cards.
     -	This can save time and make attendance management easier.
