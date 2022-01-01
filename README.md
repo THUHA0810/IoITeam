@@ -22,7 +22,11 @@ You can visit the link to see the interface, information and control the robot.
     -	This can improve the safety of your home or school.
     -	How to detect fire?
         o	The robot uses OpenCV to identify fires and reports back to the host system.
-
+   # Attendance by face recognition: (Update)
+    - New students will be created a dataset, then the robot will use the dataset to recognize the student's face and conduct attendance.
+      tutorial:
+    - Students need to put their face in front of the robot's camera.
+    - The robot will recognize and return the results to the screen, if the face is valid, it will be enrolled in the list.
 
 
 # RESOURCES
