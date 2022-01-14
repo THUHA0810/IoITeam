@@ -164,7 +164,7 @@ p{font-family:Helvetica;}
             <li><a href="#C0" title="HOME" style="font-family:Verdana;"><b>HOME</b></a></li>
             <li><a href="#C1" title="OVERVIEW"style="font-family:Verdana;"><b>PROJECT</b></a></li>
             <li><a href="#C2" title="MEMBERS"style="font-family:Verdana;"><b>MEMBERS</b></a></li>
-            <li><a href="#C3" title="CONTROL"style="font-family:Verdana;"><b>CONTROL</b></a></li>
+            <li><a href="#C3" title="Question & Answer"style="font-family:Verdana;"><b>CONTROL</b></a></li>
         </ul>
     </nav>
     <br>
@@ -323,17 +323,37 @@ p{font-family:Helvetica;}
             <p class="C3"style="font-size:180%;color: black;"><strong> CONTROL </strong></p>
 
         <!-- Control page -->    
-        <button type="button" onclick=say()>Good morning!</button>
-        <button type="button" onclick=present()>Start the presentation!</button>
+        <button type="button" onclick=say()>Hello!</button>
+        <button type="button" onclick=present()>About IUH</button>
+        <button type="button" onclick=schedule()>Class time information</button>
+        <button type="button" onclick=ques1()>Where could I go to pay tuition fees directly?</button>
+        <button type="button" onclick=ques2()>Where is the library?</button>
+        <button type="button" onclick=ques3()>Where is the Faculty of Electronic Technology?</button>
         <script>
 
         function say() {
             Ohmni.setSpeechLanguage("en-US");
-            Ohmni.say("Good morning!")
+            Ohmni.say("Hello everyone, we are IOI Team!")
         }
         function present() {
             Ohmni.setSpeechLanguage("en-US");
             Ohmni.say("Hello everyone.  Welcome to our project “ Robot serving in schools”.     Our team consists of 5 members. ....   In recent years, strangers entering the school has resulted in unwelcome consequences for pupils, students, the school such as stealing, test cheating and so on. We have seen those problems so we used the Ohmni robot to come up with a solution. We programmed the Ohmni robot to stand in classrooms, leacture halls, exam rooms, and lap rooms to take attendance using the barcode on the student’s card, then remind them to wash their hands and wearing a mask. This is very important and indispensable during this pandemic. Simultaneously, the robot can go around the school campus (by controlling on the interface that it is available) to detect fire and then report the issue. In addition, students can use the robot to look up information such as class times and ask for directions. The school will improve the security level on campus with robot, as well as reduce labor for teachers, increase teaching productivity, and improve the warning capacity to bring the safety of the fire alarm operation and fire fighting.     So we set 4 goals for this project. Firstly, robot can automatically take attendance according to class in the lab. Secondly, it can fire alarm automatically. Thirtly, Provide class time for students know when they forget or don’t know. Finally, Robot can go around helping students find information. Example when a student wants to go to the building A, it can guide and direct for the student. ")
+        }
+        function schedule() {
+            Ohmni.setSpeechLanguage("en-US");
+            Ohmni.say("period 1: 6:30 am to 7:20 am; period 2: 7:20 a.m. to 8:00 a.m; period 3: 8.10 am to 9 am; period 4: 9:10 am to 10 am; period 5: 10:00 am to 10:50 am; period 6: 10:50 am to 11:40 am; period 7: 12:30 am to 13:20 am; period 8: 13:20 pm to 14:10 pm; period 9: 14:10 pm to 15:00 pm; period 10: 15:10 pm to 16:00 pm; period 11: 16:00 pm to 16:50 pm; period 12: 16:50 pm to 17:40 pm")
+        }
+        function ques1() {
+            Ohmni.setSpeechLanguage("en-US");
+            Ohmni.say("You can go to the accounting room on the ground floor of the building E.")
+        }
+        function ques2() {
+            Ohmni.setSpeechLanguage("en-US");
+            Ohmni.say("Please go to the ground floor of building A and H!")
+        }
+        function ques3() {
+            Ohmni.setSpeechLanguage("en-US");
+            Ohmni.say("It's on the 7th floor of the X building!")
         }
         </script>
         </header>
