@@ -17,11 +17,6 @@ You can visit the link to see the interface, information and control the robot.
         o	You just need to show the student card containing the barcode in front of the robot's camera.
         o	The robot will process and check your student ID with the class list.
         o	You can only take attendance successfully if you provide your student card and your student ID is listed on the class list.
-   # Fire alarm by image processing OpenCV Python:
-    -	The robot can detect a fire and notify you.
-    -	This can improve the safety of your home or school.
-    -	How to detect fire?
-        o	The robot uses OpenCV to identify fires and reports back to the host system.
    # Attendance by face recognition: (Update)
     - New students will be created a dataset, then the robot will use the dataset to recognize the student's face and conduct attendance.
       tutorial:
