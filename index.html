@@ -346,12 +346,51 @@ p{font-family:Helvetica;}
             <p class="C3"style="font-size:180%;color: black;"><strong> Question & Answer </strong></p>
 
         <!-- Control page -->    
-        <button type="button" onclick=say()>Hello!</button><br>
-        <button type="button" onclick=present()>About IUH</button><br>
-        <button type="button" onclick=schedule()>Class time information</button><br>
-        <button type="button" onclick=ques1()>Where could I go to pay tuition fees directly?</button><br>
-        <button type="button" onclick=ques2()>Where is the library?</button><br>
-        <button type="button" onclick=ques3()>Where is the Faculty of Electronic Technology?</button><br>
+
+<div style="margin-left:20px;">
+  <button type="button" class="button" data-toggle="collapse" data-target="#demo1" onclick=say()>Hello!</button><br>
+  <button type="button" class="button" data-toggle="collapse" data-target="#demo2" onclick=present()>About IUH</button><br>
+  <button type="button" class="button" data-toggle="collapse" data-target="#demo3" onclick=schedule()>Class time information</button><br>
+  <button type="button" class="button" data-toggle="collapse" data-target="#demo4" onclick=ques1()>Where could I go to pay tuition fees directly?</button><br>
+  <button type="button" class="button" data-toggle="collapse" data-target="#demo5" onclick=ques2()>Where is the library?</button><br>
+  <button type="button" class="button" data-toggle="collapse" data-target="#demo6" onclick=ques3()>Where is the Faculty of Electronic Technology?</button><br>
+  <div id="demo1" class="collapse">
+      Hello everyone, we are IOI Team!
+  </div>
+  <div id="demo2" class="collapse">
+      OVERVIEW
+      - Official Name: Trường Đại học Công nghiệp thành phố Hồ Chí Minh 
+      - English Name: Industrial University of Ho Chi Minh City 
+      - Abbreviation: IUH. 
+      Industrial University of Ho Chi Minh City was formerly Go Vap Vocational School founded by Don Bosco priests on November 11, 1956 at Hanh Thong commune, Go Vap District, Gia Dinh Province. In 1968, the school was renamed as the Don Bosco Private Junior High School of Technology. Until January 31, 1970 the school was upgraded to be the Don Bosco Private Junior High School of Technology, shortly referred to as the Don Bosco High School of Engineering . After the day of peace and reunification, the Southern Liberation Army took over the school and on December 19, 1975 the School was handed over to the General Department of Metallurgy Engineering and Electronics. In 1978, the School was renamed as the School of Engineering IV belonging to The Ministry of Mechanical Engineering and Metallurgy. By 1994, the school was merged with the Chemical High School II in Bien Hoa City  to become  the Industrial Engineering School IV under the management of The Ministry of Industry. In March 1999, the school was upgraded to become Industrial College IV and in December 2004 the college was upgraded to become Industrial University of Ho Chi Minh City according to the Decision of 214/2004/QD - TTg by the Prime Minister. The university is currently one of the  big educational and training institutions  in Vietnam. 
+      - The campuses: Main Campus (Ho Chi Minh City); Quang Ngai Campus; Thanh Hoa Campus.
+  </div>
+  <div id="demo3" class="collapse">
+      Period 1: 6:30 am to 7:20 am; 
+      Period 2: 7:20 am to 8:00 am; 
+      Period 3: 8.10 am to 9 am; 
+      Period 4: 9:10 am to 10 am; 
+      Period 5: 10:00 am to 10:50 am; 
+      Period 6: 10:50 am to 11:40 am; 
+      Period 7: 12:30 am to 13:20 am; 
+      Period 8: 13:20 pm to 14:10 pm; 
+      Period 9: 14:10 pm to 15:00 pm; 
+      Period 10: 15:10 pm to 16:00 pm; 
+      Period 11: 16:00 pm to 16:50 pm; 
+      Period 12: 16:50 pm to 17:40 pm.
+  </div>
+  <div id="demo4" class="collapse">
+      You can go to the accounting room on the ground floor of the building E.
+  </div>    
+  <div id="demo5" class="collapse">
+      Please go to the ground floor of building A and H!
+  </div>
+  <div id="demo6" class="collapse">
+      It's on the 7th floor of the X building.
+  </div>   
+</div>
+
+
         <script>
 
         function say() {
@@ -360,11 +399,11 @@ p{font-family:Helvetica;}
         }
         function present() {
             Ohmni.setSpeechLanguage("en-US");
-            Ohmni.say("Hello everyone.  Welcome to our project “ Robot serving in schools”.     Our team consists of 5 members. ....   In recent years, strangers entering the school has resulted in unwelcome consequences for pupils, students, the school such as stealing, test cheating and so on. We have seen those problems so we used the Ohmni robot to come up with a solution. We programmed the Ohmni robot to stand in classrooms, leacture halls, exam rooms, and lap rooms to take attendance using the barcode on the student’s card, then remind them to wash their hands and wearing a mask. This is very important and indispensable during this pandemic. Simultaneously, the robot can go around the school campus (by controlling on the interface that it is available) to detect fire and then report the issue. In addition, students can use the robot to look up information such as class times and ask for directions. The school will improve the security level on campus with robot, as well as reduce labor for teachers, increase teaching productivity, and improve the warning capacity to bring the safety of the fire alarm operation and fire fighting.     So we set 4 goals for this project. Firstly, robot can automatically take attendance according to class in the lab. Secondly, it can fire alarm automatically. Thirtly, Provide class time for students know when they forget or don’t know. Finally, Robot can go around helping students find information. Example when a student wants to go to the building A, it can guide and direct for the student. ")
+            Ohmni.say("OVERVIEW - Official Name: Trường Đại học Công nghiệp thành phố Hồ Chí Minh - English Name: Industrial University of Ho Chi Minh City - Abbreviation: IUH. Industrial University of Ho Chi Minh City was formerly Go Vap Vocational School founded by Don Bosco priests on November 11, 1956 at Hanh Thong commune, Go Vap District, Gia Dinh Province. In 1968, the school was renamed as the Don Bosco Private Junior High School of Technology. Until January 31, 1970 the school was upgraded to be the Don Bosco Private Junior High School of Technology, shortly referred to as the Don Bosco High School of Engineering . After the day of peace and reunification, the Southern Liberation Army took over the school and on December 19, 1975 the School was handed over to the General Department of Metallurgy Engineering and Electronics. In 1978, the School was renamed as the School of Engineering IV belonging to The Ministry of Mechanical Engineering and Metallurgy. By 1994, the school was merged with the Chemical High School II in Bien Hoa City  to become  the Industrial Engineering School IV under the management of The Ministry of Industry. In March 1999, the school was upgraded to become Industrial College IV and in December 2004 the college was upgraded to become Industrial University of Ho Chi Minh City according to the Decision of 214/2004/QD - TTg by the Prime Minister. The university is currently one of the  big educational and training institutions  in Vietnam. The campuses: Main Campus (Ho Chi Minh City); Quang Ngai Campus; Thanh Hoa Campus. ")
         }
         function schedule() {
             Ohmni.setSpeechLanguage("en-US");
-            Ohmni.say("period 1: 6:30 am to 7:20 am; period 2: 7:20 a.m. to 8:00 a.m; period 3: 8.10 am to 9 am; period 4: 9:10 am to 10 am; period 5: 10:00 am to 10:50 am; period 6: 10:50 am to 11:40 am; period 7: 12:30 am to 13:20 am; period 8: 13:20 pm to 14:10 pm; period 9: 14:10 pm to 15:00 pm; period 10: 15:10 pm to 16:00 pm; period 11: 16:00 pm to 16:50 pm; period 12: 16:50 pm to 17:40 pm")
+            Ohmni.say("period 1) 6:30 am to 7:20 am; period 2) 7:20 am to 8:00 am; period 3) 8:10 am to 9 am; period 4) 9:10 am to 10 am; period 5) 10:00 am to 10:50 am; period 6) 10:50 am to 11:40 am; period 7) 12:30 am to 13:20 am; period 8) 13:20 pm to 14:10 pm; period 9) 14:10 pm to 15:00 pm; period 10) 15:10 pm to 16:00 pm; period 11) 16:00 pm to 16:50 pm; period 12) 16:50 pm to 17:40 pm")
         }
         function ques1() {
             Ohmni.setSpeechLanguage("en-US");
@@ -376,7 +415,7 @@ p{font-family:Helvetica;}
         }
         function ques3() {
             Ohmni.setSpeechLanguage("en-US");
-            Ohmni.say("It's on the 7th floor of the X building!")
+            Ohmni.say("It's on the 7th floor of the X building.")
         }
         </script>
         </header>
